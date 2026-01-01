@@ -1,0 +1,9 @@
+<consulo-plugin url="https://github.com/consulo/consulo-archive-format">
+    <id>consulo.archive.format.7zip</id>
+    <name>Archive Format: 7-Zip</name>
+    <version>SNAPSHOT</version>
+    <category>Images</category>
+    <tags>
+        <tag>library</tag>
+    </tags>
+</consulo-plugin>
