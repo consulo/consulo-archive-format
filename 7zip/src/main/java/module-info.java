@@ -4,7 +4,7 @@
  */
 module consulo.archive.format._7zip {
     requires consulo.component.api;
-
+    requires consulo.localize.api;
     requires consulo.virtual.file.system.api;
 
     requires org.apache.commons.compress;
