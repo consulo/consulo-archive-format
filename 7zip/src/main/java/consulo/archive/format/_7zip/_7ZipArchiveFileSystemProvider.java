@@ -6,6 +6,7 @@ import consulo.virtualFileSystem.archive.ArchiveFileSystemProvider;
 import jakarta.annotation.Nonnull;
 
 import java.io.IOException;
+import java.nio.file.Path;
 
 /**
  * @author VISTALL
@@ -23,7 +24,7 @@ public class _7ZipArchiveFileSystemProvider implements ArchiveFileSystemProvider
 
     @Nonnull
     @Override
-    public ArchiveFile createArchiveFile(@Nonnull String filePath) throws IOException {
-        return new _7ZipArchiveFile(filePath);
+    public ArchiveFile createArchiveFile(@Nonnull Path path) throws IOException {
+        return new _7ZipArchiveFile(path.toFile().getPath());
     }
 }
